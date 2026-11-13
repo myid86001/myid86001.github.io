@@ -37,6 +37,12 @@ npm run dev
 
 页面以静态 HTML 输出，可直接访问与分享，不依赖前端路由。没有评论服务、分析追踪、账号系统或外部字体请求。此版本的搜索匹配标题、摘要、标签和栏目，不是全文搜索。
 
+## 当前发布状态
+
+建设期间仓库设为私有，GitHub Pages 已取消发布，`Publish website` 工作流在 Actions 中停用。提交代码不会自动公开网站。不要仅依靠文章的 `draft` 标记作为访问控制。
+
+重新公开时，需要明确恢复仓库可见性、启用工作流并确认 Pages 配置，再手动运行发布。下面的自动发布说明仅在工作流启用后生效。
+
 ## GitHub Pages
 
 此仓库计划使用 `myid86001.github.io` 作为用户站点仓库。在仓库 Settings → Pages → Build and deployment 中选择 GitHub Actions。向 `main` 推送后，`.github/workflows/pages.yml` 自动安装依赖、构建、检查并发布 `dist/`。
@@ -45,6 +51,6 @@ npm run dev
 
 ## 内容与来源
 
-当前没有代填学习笔记或个人经历。试验场提供两道同频正弦波的理想化叠加示意，含参数与模型说明。关于页保留最初参考笔记的链接；站点未复制其讲义正文。
+记录栏目收录了电磁学交互讲义；入口源文件为 `content/notes/electromagnetism.md`，完整页面为 `public/learn/physics/electromagnetism/index.html`。试验场提供两道同频正弦波的理想化叠加示意，含参数与模型说明。关于页保留最初参考笔记的链接；站点未复制其讲义正文。
 
 发布时保留第三方依赖中的许可文件。没有为本项目主动授予额外的开源许可证。
