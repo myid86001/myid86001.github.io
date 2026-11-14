@@ -39,13 +39,11 @@ npm run dev
 
 ## 当前发布状态
 
-建设期间仓库设为私有，GitHub Pages 已取消发布，`Publish website` 工作流在 Actions 中停用。提交代码不会自动公开网站。不要仅依靠文章的 `draft` 标记作为访问控制。
-
-重新公开时，需要明确恢复仓库可见性、启用工作流并确认 Pages 配置，再手动运行发布。下面的自动发布说明仅在工作流启用后生效。
+网站和仓库现已公开：[访问未定集](https://myid86001.github.io/)。公开仓库的源文件、历史提交和网站内容可能被任何人查看，请勿提交私人资料。`draft` 只控制页面是否生成，不提供访问保护。
 
 ## GitHub Pages
 
-此仓库计划使用 `myid86001.github.io` 作为用户站点仓库。在仓库 Settings → Pages → Build and deployment 中选择 GitHub Actions。向 `main` 推送后，`.github/workflows/pages.yml` 自动安装依赖、构建、检查并发布 `dist/`。
+此仓库使用 `myid86001.github.io` 作为用户站点仓库。在仓库 Settings → Pages → Build and deployment 中选择 GitHub Actions。启用 `Publish website` 工作流后，向 `main` 推送会触发 `.github/workflows/pages.yml`，安装依赖、构建、检查并发布 `dist/`。若页面没有更新，请先检查工作流是否启用以及最近一次运行的结果。
 
 依赖使用锁文件；不要提交 `node_modules/`、`dist/`、本地截图或环境变量文件。若改为项目站点，应同时调整 `site.config.mjs` 的 `base` 和链接检查逻辑。
 
